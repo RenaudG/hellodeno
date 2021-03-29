@@ -1,7 +1,7 @@
 
 function handle( event ) {
     const response = new Response(
-        "Hello World!",
+        "Salut la terre !",
         { headers: { "content-type": "text/plain" },  }
     );
     event.respondWith(response);
