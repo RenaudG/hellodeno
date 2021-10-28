@@ -1,8 +1,8 @@
 
 function handle( event ) {
     const response = new Response(
-        "Salut la terre - de lapart de : " + Deno.env.get('MYKEY'),
-        { headers: { "content-type": "text/plain" },  }
+        "<html><body>Salut la terre - de lapart de : " + Deno.env.get('MYKEY') + "</body></html>",
+        { headers: { "content-type": "text/html" },  }
     );
     event.respondWith(response);
 }
